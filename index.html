@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>SimpsonsGame</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/HTML_CSS/simpsonsLogo.png" alt="simpsonsLogo">
+    </header>
+
+    <section id="game-story" class="container"></section>
+
+    <section id="game-tutorial">
+        <span>Tutorial</span>
+        <div class="container"></div>
+    </section>
+
+    <section id="game-start">
+        <button id="start-button">Start!</button>
+    </section>
+
+    <section id="game-board">
+        <img class="logo" src="images/HTML_CSS/gameLogoRed.png" alt="gameLogo">
+
+        <canvas id="game-canvas"></canvas>
+
+        <div id="game-statusbar">
+
+            <div class="left">
+                <div id="food">
+                    <img src="images/powerups/donut.png" alt="foodItem">:<span>00</span>
+                </div>
+                <div id="lives">
+                    <img src="images/HTML_CSS/livesIcon.png" alt="homerLivesIcon">x<span>1</span>
+                </div>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li id="homer-status">HOMER>STATUS:_</li>
+                    <li id="homer-size"><span>Huuungry</span></li>
+                    <li id="defcon" class="black">DEFCON<span></span></li>
+                </ul> 
+            </div>
+        </div>
+    </section>
+
+    <section id="credits"></section>
+
+    <footer>
+        <div class="left">
+            <img src="images/HTML_CSS/juanjoLogo.png" alt="juanjo-logo">
+            <img src="images/HTML_CSS/WillyLogo.png" alt="willy-logo">
+            <span>Juanjo Prada & Guillermo Suarez <br> 2021</span>
+        </div>
+        <div>
+            <span>An HTML, CSS, & JavaScript frontend project for the IRONHACK Web Development course in Madrid Spain </span>
+            <img src="images/HTML_CSS/IRONHACK-logo.png" alt="ironhack-logo">
+        </div>
+    </footer>
+
+    <script src="javascript/power-ups.js"></script>
+    <script src="javascript/enemies.js"></script>
+    <script src="javascript/player.js"></script>
+    <script src="javascript/status-bar.js"></script>
+    <script src="javascript/background.js"></script>
+    <script src="javascript/game.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>

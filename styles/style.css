@@ -1,0 +1,255 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+header {
+    height: 600px;
+    background-image: url('../images/HTML_CSS/clouds.png');
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 400px;
+}
+
+/* #game-story {} */
+
+#game-tutorial {
+    background-color: rgb(179, 193, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: black solid 6px;
+    border-bottom: black solid 6px;
+    padding-bottom: 50px;
+}
+
+#game-tutorial span {
+    margin-top: 60px;
+    color: white;
+    font-size: 4em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#game-tutorial div {
+    width: 100%;
+    background-image: url('../images/HTML_CSS/tutorialBoard.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 600px;
+    margin-top: 60px;
+}
+
+#game-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 130, 187);
+    border-bottom: black 6px solid;
+    padding: 40px 0;
+}
+
+#start-button {
+    border: darkblue 5px solid;
+    border-radius: 10px;
+    font-size: 5em;
+    font-weight: bolder;
+    background-color: beige;
+    color: darkblue;
+    text-transform: uppercase;
+    padding: 0px 100px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#game-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgb(222, 124, 61);
+    background-size: 100%;
+}
+
+#game-canvas {
+    border: black 5px solid;
+    border-radius: 10px;
+    position: relative;
+}
+
+#game-board .logo {
+    position: absolute;
+    width: 30%;
+    display: flex;
+    align-self: center;
+}
+
+#credits {
+    border-top: black 5px solid;
+    height: 1000px;
+    background-image: url('../images/HTML_CSS/credits.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer {
+    border-top: black 5px solid;
+    height: 100px;
+    background: rgb(126, 85, 47);
+    display: flex;
+    justify-content: space-between;
+    /* color: white; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+footer img {
+    height: 100px;
+    width: auto;
+}
+
+footer .left{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+footer .right{
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+}
+
+/* STATUS BAR */
+
+#game-statusbar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#game-statusbar .left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-left: 40px;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+#game-statusbar .left div {
+    margin-right: 40px;
+}
+
+#game-statusbar .left img {
+    height: 100px;
+    width: auto;
+}
+
+#game-statusbar .right {
+    background-color: lightslategray;
+    border: black 5px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#game-statusbar .right ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+#game-statusbar .right ul li {
+    list-style-type: none;
+    font-size: 1.75em;
+}
+
+#homer-status {
+    padding-right: 40px;
+    padding-left: 15px;
+    background-color: black;
+    color: greenyellow;
+    font-family: monospace;
+    align-self: center;
+    padding: 10px 14px;
+    border: 1px solid white;
+}
+
+#homer-size {
+    margin: 0 40px;
+    align-self: center;
+}
+
+#defcon {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+    border: solid black 2.5px;
+    border-radius: 15px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.black {
+    background: black;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.red {
+    background: red;
+}
+
+.white {
+    background: white;
+}
+
+.starved {
+    background-color: red;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.biggie {
+    background-color: grey;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.fat {
+    background-color: blue;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.family {
+    background-color: gold;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
