@@ -538,8 +538,8 @@ class Enemy {
                         this.hMultiplier = 1
                         break
                     case 10:
-                        this.skin.src = 'images/C/C+/trucksTRuckTruck.png'
-                        this.skinFlash.src = 'images/C/C+/trucksTruckTruckFlash.png'
+                        this.skin.src = 'images/C/C+/trucksTrucksTruck.png'
+                        this.skinFlash.src = 'images/C/C+/trucksTrucksTruckFlash.png'
                         this.wScale = 1.9184
                         this.hMultiplier = 2
                         break
@@ -598,8 +598,8 @@ class Enemy {
                         this.hMultiplier = 1
                         break
                     case 8:
-                        this.skin.src = 'images/C/C-/ratTRapDeliveryTruck.png'
-                        this.skinFlash.src = 'images/C/C-/ratTRapDeliveryTruckFlash.png'
+                        this.skin.src = 'images/C/C-/ratTrapDeliveryTruck.png'
+                        this.skinFlash.src = 'images/C/C-/ratTrapDeliveryTruckFlash.png'
                         this.wScale = 2.2028
                         this.hMultiplier = 1.5
                         break
