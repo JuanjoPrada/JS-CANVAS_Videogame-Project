@@ -154,7 +154,7 @@ class Enemy {
                 }
                 break
             case 'B':
-                const BSkins = 31
+                const BSkins = 53
                 const randomBSkin = Math.floor(Math.random() * BSkins)
                 switch (randomBSkin) {
                     //Estos estaran invertidos 
@@ -344,6 +344,132 @@ class Enemy {
                         this.wScale = 1.4222
                         this.hMultiplier = 1
                         break
+                    case 32:
+                        this.skin.src = 'images/B/abe.png'
+                        this.skinFlash.src = 'images/B/abeFlash.png'
+                        this.wScale = 1.5748
+                        this.hMultiplier = 1
+                        break
+                    case 33:
+                        this.skin.src = 'images/B/burns.png'
+                        this.skinFlash.src = 'images/B/burnsFlash.png'
+                        this.wScale = 2.6702
+                        this.hMultiplier = 1
+                        break
+                    case 34:
+                        this.skin.src = 'images/B/kodos.png'
+                        this.skinFlash.src = 'images/B/kodosFlash.png'
+                        this.wScale = 1.4823
+                        this.hMultiplier = 1.5
+                        break
+                    case 35:
+                        this.skin.src = 'images/B/maggie.png'
+                        this.skinFlash.src = 'images/B/maggieFlash.png'
+                        this.wScale = 1.3511
+                        this.hMultiplier = 1
+                        break
+                    case 36:
+                        this.skin.src = 'images/B/nelson.png'
+                        this.skinFlash.src = 'images/B/nelsonFlash.png'
+                        this.wScale = 1.6293
+                        this.hMultiplier = 1
+                        break
+                    case 37:
+                        this.skin.src = 'images/B/ness.png'
+                        this.skinFlash.src = 'images/B/nessFlash.png'
+                        this.wScale = 1.4427
+                        this.hMultiplier = 1
+                        break
+                    case 38:
+                        this.skin.src = 'images/B/poochie.png'
+                        this.skinFlash.src = 'images/B/poochieFlash.png'
+                        this.wScale = 1.0382
+                        this.hMultiplier = 1
+                        break
+                    case 39:
+                        this.skin.src = 'images/B/rex.png'
+                        this.skinFlash.src = 'images/B/rexFlash.png'
+                        this.wScale = 1.0763
+                        this.hMultiplier = 1
+                        break
+                    case 40:
+                        this.skin.src = 'images/B/ralph.png'
+                        this.skinFlash.src = 'images/B/ralphFlash.png'
+                        this.wScale = 1.0076
+                        this.hMultiplier = 1
+                        break
+                    case 41:
+                        this.skin.src = 'images/B/rm.png'
+                        this.skinFlash.src = 'images/B/rmFlash.png'
+                        this.wScale = 1.7857
+                        this.hMultiplier = 1
+                        break
+                    case 42:
+                        this.skin.src = 'images/B/russ.png'
+                        this.skinFlash.src = 'images/B/russFlash.png'
+                        this.wScale = 2.1739
+                        this.hMultiplier = 1
+                        break
+                    case 43:
+                        this.skin.src = 'images/B/twin.png'
+                        this.skinFlash.src = 'images/B/twinFlash.png'
+                        this.wScale = 2.1968
+                        this.hMultiplier = 1
+                        break
+                    case 44:
+                        this.skin.src = 'images/B/scratchy.png'
+                        this.skinFlash.src = 'images/B/scratchyFlash.png'
+                        this.wScale = 1.3673
+                        this.hMultiplier = 1
+                        break
+                    case 45:
+                        this.skin.src = 'images/B/snake.png'
+                        this.skinFlash.src = 'images/B/snakeFlash.png'
+                        this.wScale = 1.8018
+                        this.hMultiplier = 1
+                        break
+                    case 46:
+                        this.skin.src = 'images/B/skinner.png'
+                        this.skinFlash.src = 'images/B/skinnerFlash.png'
+                        this.wScale = 2.8145
+                        this.hMultiplier = 1
+                        break
+                    case 47:
+                        this.skin.src = 'images/B/collector.png'
+                        this.skinFlash.src = 'images/B/collectorFlash.png'
+                        this.wScale = 1.5038
+                        this.hMultiplier = 1
+                        break
+                    case 48:
+                        this.skin.src = 'images/B/collider.png'
+                        this.skinFlash.src = 'images/B/colliderFlash.png'
+                        this.wScale = 1.6807
+                        this.hMultiplier = 1
+                        break
+                    case 49:
+                        this.skin.src = 'images/B/fracker.png'
+                        this.skinFlash.src = 'images/B/frackerFlash.png'
+                        this.wScale = 1.8181
+                        this.hMultiplier = 1
+                        break
+                    case 50:
+                        this.skin.src = 'images/B/troy.png'
+                        this.skinFlash.src = 'images/B/troyFlash.png'
+                        this.wScale = 1.8763
+                        this.hMultiplier = 1
+                        break
+                    case 51:
+                        this.skin.src = 'images/B/bully2.png'
+                        this.skinFlash.src = 'images/B/bully2Flash.png'
+                        this.wScale = 3.4050
+                        this.hMultiplier = 0.7
+                        break
+                    case 52:
+                        this.skin.src = 'images/B/marge.png'
+                        this.skinFlash.src = 'images/B/margeFlash.png'
+                        this.wScale =
+                            this.hMultiplier = 1.9608
+                        break
 
                 }
                 break
@@ -413,7 +539,7 @@ class Enemy {
                         break
                     case 10:
                         this.skin.src = 'images/C/C+/trucksTRuckTruck.png'
-                        this.skinFlash.src = 'images/C/C+/trucksTRuckTruckFlash.png'
+                        this.skinFlash.src = 'images/C/C+/trucksTruckTruckFlash.png'
                         this.wScale = 1.9184
                         this.hMultiplier = 2
                         break

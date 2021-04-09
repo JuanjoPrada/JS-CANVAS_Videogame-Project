@@ -118,18 +118,32 @@ footer {
 footer img {
     height: 100px;
     width: auto;
+    padding: 5px;
+    /* !!!!!!!!!!!!!!!! */
 }
 
-footer .left{
+footer .left {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
 }
 
-footer .right{
+footer .right {
     display: flex;
     justify-content: space-around;
     text-align: right;
+}
+
+.footer-logo {
+    /* !!!!!!!!!!!!!!!! */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo span {
+    /* !!!!!!!!!!!!!!!! */
+    margin-right: 15px;
 }
 
 /* STATUS BAR */
