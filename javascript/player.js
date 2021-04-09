@@ -13,8 +13,8 @@ class Player {
         this.w = this.initialW
         this.h = this.initialH
 
-        this.minW = this.initialW *0.75 //a decidir
-        this.minH = this.initialH *0.75 //a decidir
+        this.minW = this.initialW * 0.75 //a decidir
+        this.minH = this.initialH * 0.75 //a decidir
 
         this.ph0MinW = this.minW //a decidir
         this.ph0MinH = this.minH //a decidir
@@ -51,16 +51,16 @@ class Player {
         this.posY = this.initialPosY
 
         this.speed = this.background.speedX * 3 // a decidir
-        this.speedY = this.speed * 2 
-        this.speedXGoRight = this.speed / 2 
-        this.speedXGoLeft = this.speed * 2 
+        this.speedY = this.speed * 2
+        this.speedXGoRight = this.speed / 2
+        this.speedXGoLeft = this.speed * 2
         this.speedXReturnLFromR = this.background.speedX
         this.speedXReturnRFromL = this.speedXGoRight / 2
 
         this.moveLtoCenterFromR = false
         this.moveRtoCenterFromL = false
 
-        this.invincibility = true //activalo manualmente para dar invencibilidad infinita
+        this.invincibility = false //activalo manualmente para dar invencibilidad infinita
         this.invincibilityDuration = 1500 //a decidir
         this.flash = 0
         this.flashDuration = 0.5 //a decidir
@@ -74,52 +74,52 @@ class Player {
         this.setListeners()
 
         this.deadImg = new Image()
-        this.deadImg.src = 'images/player/phaseDead/phDead.png' 
+        this.deadImg.src = 'images/player/phaseDead/phDead.png'
         this.deadImgFlash = new Image()
-        this.deadImgFlash.src = 'images/player/phaseDead/phDeadFlash.png' 
-        this.deadWScale = 1.4901 
+        this.deadImgFlash.src = 'images/player/phaseDead/phDeadFlash.png'
+        this.deadWScale = 1.4901
 
         this.ph0Img = new Image()
-        this.ph0Img.src = 'images/player/phase0/ph0.png' 
+        this.ph0Img.src = 'images/player/phase0/ph0.png'
         this.ph0ImgFlash = new Image()
-        this.ph0ImgFlash.src = 'images/player/phase0/ph0Flash.png' 
-        this.ph0WScale = 0.8617 
+        this.ph0ImgFlash.src = 'images/player/phase0/ph0Flash.png'
+        this.ph0WScale = 0.8617
 
         this.ph1Img = new Image()
-        this.ph1Img.src = 'images/player/phase1/ph1.png' 
+        this.ph1Img.src = 'images/player/phase1/ph1.png'
         this.ph1ImgFlash = new Image()
-        this.ph1ImgFlash.src = 'images/player/phase1/ph1Flash.png' 
-        this.ph1WScale = 0.9042 
+        this.ph1ImgFlash.src = 'images/player/phase1/ph1Flash.png'
+        this.ph1WScale = 0.9042
 
         this.ph2Img = new Image()
-        this.ph2Img.src = 'images/player/phase2/ph2.png' 
+        this.ph2Img.src = 'images/player/phase2/ph2.png'
         this.ph2ImgFlash = new Image()
-        this.ph2ImgFlash.src = 'images/player/phase2/ph2Flash.png' 
-        this.ph2WScale = 0.9312 
+        this.ph2ImgFlash.src = 'images/player/phase2/ph2Flash.png'
+        this.ph2WScale = 0.9312
 
         this.ph3Img = new Image()
-        this.ph3Img.src = 'images/player/phase3/ph3.png' 
+        this.ph3Img.src = 'images/player/phase3/ph3.png'
         this.ph3ImgFlash = new Image()
-        this.ph3ImgFlash.src = 'images/player/phase3/ph3Flash.png' 
+        this.ph3ImgFlash.src = 'images/player/phase3/ph3Flash.png'
         this.ph3WScale = 0.9032 //0.7032
 
         this.ph4Img = new Image()
-        this.ph4Img.src = 'images/player/phase4/ph4.png' 
+        this.ph4Img.src = 'images/player/phase4/ph4.png'
         this.ph4ImgFlash = new Image()
-        this.ph4ImgFlash.src = 'images/player/phase4/ph4Flash.png' 
-        this.ph4WScale = 0.9881 
+        this.ph4ImgFlash.src = 'images/player/phase4/ph4Flash.png'
+        this.ph4WScale = 0.9881
 
         this.ph5Img = new Image()
-        this.ph5Img.src = 'images/player/phase5/ph5.png' 
+        this.ph5Img.src = 'images/player/phase5/ph5.png'
         this.ph5ImgFlash = new Image()
-        this.ph5ImgFlash.src = 'images/player/phase5/ph5Flash.png' 
-        this.ph5WScale = 0.9//1.1769 
+        this.ph5ImgFlash.src = 'images/player/phase5/ph5Flash.png'
+        this.ph5WScale = 0.9 //1.1769 
 
         this.phBlobImg = new Image()
-        this.phBlobImg.src = 'images/player/phase8108/ph8108.png' 
+        this.phBlobImg.src = 'images/player/phase8108/ph8108.png'
         this.phBlobImgFlash = new Image()
-        this.phBlobImgFlash.src = 'images/player/phase8108/ph8108Flash.png' 
-        this.phBlobWScale = 0.9//0.7934 
+        this.phBlobImgFlash.src = 'images/player/phase8108/ph8108Flash.png'
+        this.phBlobWScale = 0.9 //0.7934 
     }
 
     setListeners() {
@@ -156,7 +156,7 @@ class Player {
             this.w = this.h * this.deadWScale
             this.invincibility = false
             game.deathProtocol()
-            
+
             //--------------
         } else if (this.isPhaseX(this.ph1MinH, this.ph1MinW, this.ph0MinH, this.ph0MinW)) {
             //phase 0
