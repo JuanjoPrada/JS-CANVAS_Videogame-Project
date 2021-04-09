@@ -35,7 +35,7 @@ class StatusBar {
 
     update() {
         this.updateFood()
-        //this.updateLives()
+        this.updateLives()
         this.updateHomerSize()
         this.updateDefcon()
     }
@@ -52,7 +52,7 @@ class StatusBar {
     }
 
     updateLives() {
-        if (this.player.phase = -1) {
+        if (this.player.phase === -1) {
             this.livesTextBlock.innerText = 0
         }
     }

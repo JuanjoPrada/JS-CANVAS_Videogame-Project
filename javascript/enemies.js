@@ -864,7 +864,6 @@ class Enemy {
                         break
                 }
                 break
-
             case 'Z':
                 const ZSkins = 3
                 const randomZSkin = Math.floor(Math.random() * ZSkins)

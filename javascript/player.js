@@ -60,7 +60,7 @@ class Player {
         this.moveLtoCenterFromR = false
         this.moveRtoCenterFromL = false
 
-        this.invincibility = false //activalo manualmente para dar invencibilidad infinita
+        this.invincibility = true //activalo manualmente para dar invencibilidad infinita
         this.invincibilityDuration = 1500 //a decidir
         this.flash = 0
         this.flashDuration = 0.5 //a decidir
